@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Sân</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-book.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <a href="./index.html">
+                    <p>THUÊ SÂN BÓNG</p>
+                </a>
+                <a href="./index.html" class="TabletTitleLink">THUÊ SÂN BÓNG</a>
+
+            </div>
+            <nav>
+                <ul class="mainmenu">
+                    <li id="index"><a href="index.html">TRANG CHỦ</a></li>
+                    <li id="about"><a href="about.html">GIỚI THIỆU</a></li>
+                    <li id="field"><a href="field.html">TÌM SÂN</a>
+
+                        <i class="fas fa-caret-down fa-sm dropdown-arrow downClass" onclick="toggleDropdown()"></i>
+
+                        <ul class="submenu">
+                            <li><a href="./details-1.html">Sân Trung Hòa</a></li>
+                            <li><a href="./details-2.html">Sân Stamford Bridge</a></li>
+                        </ul>
+                        <ul class="submenu-mobile">
+                            <li><a href="./details-1.html">Sân Trung Hòa</a></li>
+                            <li><a href="./details-2.html">Sân Stamford Bridge</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger" onclick="toggleNavbar()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="bookmain">
+
+        <div class="container">
+
+
+            <form>
+                <h1>ĐẶT SÂN</h1>
+                <hr>
+                <section class="sec1">
+                    <!--Section 1-->
+                    <div class="horizontal">
+                        <div class="courtName">
+                            <label for="courtName"><h2>Tên sân</h2></label><br>
+                            <p>Sân Trung Hòa</p>
+                        </div>
+                        <div class="address">
+                            <label for="address"><h2>Địa chỉ</h2></label><br>
+                            <p>Ngõ 55-57, đường Trần Phú, Hà Đông </p>
+                            <p>(trong trường Đại học Nghệ thuật Trung Ương)</p>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <label for="contact"><h2>Liên hệ</h2></label><br>
+                        <p>0123456737 - Anh Hoàng</p>
+                    </div>
+                </section>
+                <hr>
+
+                <section class="sec2">
+                    <!--Section 2-->
+                    <div class="horizontal">
+                        <div class="validate">
+                            <label for="name"><h2>Tên người đặt</h2></label><br>
+                            <input name="Tên người đặt" id="name" type="text">
+                            <br><span>Error message</span>
+                            <i class="fas fa-times-circle fa-color-error"></i>
+                            <i class="fas fa-check-circle fa-color-success"></i>
+
+                        </div>
+                        <div class="validate">
+                            <label for="sdt"><h2>Số điện thoại</h2></label><br>
+                            <input name="Số điện thoại" id="sdt" type="number">
+                            <br><span>Error message</span>
+                            <i class="fas fa-times-circle fa-color-error"></i>
+                            <i class="fas fa-check-circle fa-color-success"></i>
+                        </div>
+                    </div>
+                    <div class="horizontal">
+                        <div class="validate" id="select">
+                            <label for="time"><h2>Đặt khung giờ</h2></label><br>
+                            <select name="Đặt khung giờ" id="time" onchange="payment()">
+                                <option value="">--- Chọn khung giờ ---</option>
+                                <option value=300000>06:00 - 16:00: 300k/h</option>
+                                <option value=600000>16:00 - 17:30: 600k/h</option>
+                                <option value=800000>17:30 - 20:30: 800k/h</option>
+                                <option value=400000>20:30 - 22:00: 400k/h</option>
+                            </select>
+                            <br><span>Error message</span>
+                            <i class="fas fa-times-circle fa-color-error"></i>
+                            <i class="fas fa-check-circle fa-color-success"></i>
+                        </div>
+
+                        <div class="validate">
+                            <label for="hour"><h2>Số giờ</h2></label><br>
+                            <input name="Số giờ" id="hour" type="number" oninput="payment()">
+                            <br><span>Error message</span>
+                            <i class="fas fa-times-circle fa-color-error"></i>
+                            <i class="fas fa-check-circle fa-color-success"></i>
+                        </div>
+
+
+                    </div>
+                    <div class="horizontal">
+                        <div class="validate">
+                            <label for="playerNumber"><h2>Số người chơi</h2></label><br>
+                            <input name="Số người chơi" id="playerNumber" type="number">
+                            <br><span>Error message</span>
+                            <i class="fas fa-times-circle fa-color-error"></i>
+                            <i class="fas fa-check-circle fa-color-success"></i>
+
+                        </div>
+                        <div class="validate">
+                            <label for="teamNumber"><h2>Số đội chơi</h2></label><br>
+                            <input type="number" name="Số đội chơi" id="teamNumber" oninput="payment()">
+                            <br><span>Error message</span>
+                            <i class="fas fa-times-circle fa-color-error"></i>
+                            <i class="fas fa-check-circle fa-color-success"></i>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section class="sec3">
+                    <!--Section 3-->
+                    <div class="horizontal">
+                        <div class="validate" id="radio">
+                            <h2>Đặt định kì</h2>
+                            <div>
+                                <input type="radio" name="datDinhKi" id="khong" value="Không" checked>
+                                <label for="khong">Không</label>
+
+                            </div>
+                            <div>
+                                <input type="radio" name="datDinhKi" id="weekly" value="Đặt hàng tuần">
+                                <label for="weekly">Đặt hàng tuần</label>
+
+                            </div>
+                            <div>
+                                <input type="radio" name="datDinhKi" id="monthly" value="Đặt hàng tháng">
+                                <label for="monthly">Đặt hàng tháng</label>
+
+                            </div>
+                            <br><span>Error message</span>
+
+                        </div>
+                        <div class="validate">
+                            <h2>Dịch vụ thêm</h2>
+                            <div class="checkbox">
+                                <div>
+                                    <input type="checkbox" name="service" id="water" value=0 class="cbox">
+                                    <label for="water">Nước uống miễn phí</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="service" id="uniform" value="0" onchange="calcUniform(), payment()">
+                                    <label for="uniform">Đồng phục thi đấu (300k/đội)</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="service" id="referee" value="0" onchange="calcReferee(), payment()">
+                                    <label for="referee">Thuê trọng tài (200k/h)</label>
+                                </div>
+                            </div>
+                            <br><span>Error message</span>
+
+                        </div>
+                    </div>
+                </section>
+
+            </form>
+            <div class="tongTien">
+                <h2>Tổng tiền: 0 VNĐ</h2>
+
+
+            </div>
+            <div class="btn">
+                <button>Đặt sân</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <div class="footercontainer">
+                <h2>THUÊ SÂN BÓNG</h2>
+                <div class="footer1">
+
+                    <a href="mailto:vunhatminh317@gmail.com"><img src="./images/gmail.png" alt=""></a>
+                    <a href="https://www.facebook.com/nhatminh3107"><img src="./images/facebook.png" alt=""></a>
+                    <a href="Tel:0912345678"><img src="./images/zalo.png"></a>
+                </div>
+                <div class="footer2">
+
+                    <a href="index.html">Trang chủ</a>
+                    <a href="about.html">Giới thiệu</a>
+                    <a href="field.html">Tìm sân</a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="./js/book.js"></script>
+    <script src="./js/responsive.js"></script>
+</body>
+
+</html>

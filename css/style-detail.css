@@ -1,0 +1,74 @@
+.main-detail {
+    margin-top: 170px
+}
+
+.section1-detail {
+    display: flex;
+}
+
+.section1-detail-img img {
+    width: 50vw;
+    margin-right: 20px;
+}
+
+.section1-detail-text {
+    line-height: 25px;
+}
+
+.section1-detail-text h2 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    font-family: noodle;
+}
+
+.linkContainer {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 7vw;
+}
+
+.linkContainer a:link,
+.linkContainer a:visited {
+    text-decoration: none;
+    font-family: noodle;
+    font-size: xx-large;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.linkContainer a:hover {
+    text-decoration: none;
+    background-color: rgb(163, 255, 163);
+    border: 2px solid rgb(163, 255, 163);
+    box-shadow: 0px 0px 5px rgb(163, 255, 163), 0px 0px 10px rgba(255, 255, 255, 0.753);
+    color: #292929;
+    transition: 0.3s;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: noodle;
+    letter-spacing: 1.5px;
+    color: rgb(163, 255, 163);
+    margin-bottom: 10px;
+}
+
+.section2-detail img {
+    width: 50vw;
+    margin-top: 10px
+}
+
+#field {
+    background-color: #292929;
+}

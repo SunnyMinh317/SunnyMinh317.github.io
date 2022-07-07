@@ -1,0 +1,251 @@
+.bookmain {
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../images/bookbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: noodle;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: rgb(187, 255, 187);
+}
+
+h2 {
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input,
+select {
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+}
+
+i {
+    font-size: 0.75rem;
+}
+
+.sec1,
+.sec2,
+.sec3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sec1 label,
+.sec2 label {
+    width: 320px;
+    display: inline-block;
+}
+
+.sec3 label {
+    width: 270px;
+    display: inline-block;
+}
+
+.horizontal {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.541);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.705);
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2 input {
+    width: 250px;
+    margin-bottom: 10px;
+    border: none;
+    appearance: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 2px solid rgba(243, 243, 243, 0.699);
+    color: white;
+}
+
+.sec2 input:hover {
+    border: 2px solid rgba(243, 243, 243, 0.993);
+    transition: 0.2s;
+}
+
+.sec2 select {
+    width: 250px;
+    border: 2px solid rgba(243, 243, 243, 0.699);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.sec2 select:hover {
+    border: 2px solid rgba(243, 243, 243, 0.993);
+    transition: 0.2s;
+}
+
+.sec2 option {
+    background: #292929;
+    color: white;
+    border-radius: 7px;
+}
+
+button {
+    width: 8vw;
+    margin-top: 30px;
+    padding: 15px;
+    font-family: noodle;
+    font-size: 1.5em;
+    align-items: center;
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgb(187, 255, 187);
+    box-shadow: 0px 0px 3px white;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+
+/*validate ERROR*/
+
+.validate-error {
+    position: relative;
+    animation: shake .1s ease 1s 3;
+    animation-delay: 0s;
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: translateX(2px)
+    }
+    to {
+        -webkit-transform: translateX(-2px);
+    }
+}
+
+.validate-error input,
+.validate-error select {
+    border: 2px solid rgb(255, 22, 22)
+}
+
+.validate-error span {
+    color: rgb(255, 22, 22)
+}
+
+.fa-color-error {
+    color: red;
+}
+
+.validate-error i {
+    position: absolute;
+    right: 27%;
+    top: 45%
+}
+
+.validate-error .fa-check-circle {
+    visibility: hidden;
+}
+
+
+/*validate SUCCESS*/
+
+.validate-success {
+    position: relative;
+}
+
+.validate-success input,
+.validate-success select {
+    border: 2px solid rgb(76, 255, 22)
+}
+
+.validate-success span {
+    visibility: hidden;
+}
+
+.fa-color-success {
+    color: rgb(76, 255, 22)
+}
+
+.validate-success i {
+    position: absolute;
+    right: 27%;
+    top: 45%
+}
+
+.validate-success .fa-times-circle {
+    visibility: hidden;
+}
+
+
+/*validate NONE*/
+
+.validate span {
+    visibility: hidden;
+}
+
+.validate i {
+    visibility: hidden;
+}
+
+
+/*Tổng tiền*/
+
+.tongTien {
+    display: flex;
+    position: relative;
+    width: 100%;
+    color: rgb(188, 255, 188);
+    letter-spacing: 1.5px;
+}
+
+#vnd {
+    position: absolute;
+    right: 0px
+}
+
+.tongTien #sum {
+    position: relative;
+    left: 25px
+}

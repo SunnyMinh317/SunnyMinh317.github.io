@@ -1,0 +1,35 @@
+.aboutmain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+}
+
+.aboutimg img {
+    width: 60vw;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.abouttext {
+    text-align: justify;
+    line-height: 25px;
+}
+
+.abouttext h2 {
+    font-family: noodle;
+    font-size: 2rem;
+}
+
+footer {
+    margin-top: 190px;
+}
+
+#about {
+    background-color: #292929;
+}
+
+.mobileAboutImg img {
+    display: none;
+}

@@ -1,0 +1,156 @@
+h2 a {
+    text-decoration: none;
+}
+
+.sanbong h2 {
+    font-size: 2rem;
+}
+
+h2 a:link,
+h2 a:visited {
+    color: white
+}
+
+h2 a:hover {
+    text-shadow: 0px 0px 5px rgb(163, 255, 163);
+    transition: 0.2s;
+}
+
+b {
+    color: rgb(180, 255, 186);
+    font-weight: bolder;
+}
+
+.fieldmain {
+    padding-top: 150px
+}
+
+.fieldmain {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 30px
+}
+
+.fieldmain li {
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.sanbong {
+    flex: 2
+}
+
+.slogan {
+    flex: 1;
+}
+
+
+/*xem chi tiet dat san link*/
+
+.bottomLink {
+    margin-top: 50px;
+}
+
+.bottomLink a:link,
+.bottomLink a:visited {
+    font-family: noodle;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    background: white;
+    padding: 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+    place-items: center;
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.bottomLink a:hover {
+    background-color: rgb(163, 255, 163);
+    box-shadow: 0px 0px 5px rgb(198, 255, 186);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.santrunghoa-text,
+.sanstamford-text {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+
+/*san trung hoa*/
+
+.santrunghoa {
+    background-image: url(../images/trunghoabg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1;
+}
+
+.santrunghoa-text {
+    color: white;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-bottom: 30px
+}
+
+
+/*san stamford*/
+
+.sanstamford {
+    background-image: url(../images/stamfordbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.sanstamford-text {
+    color: white;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-bottom: 30px
+}
+
+
+/*slogan*/
+
+.slogan {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px
+}
+
+.slogan h2 {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: x-large;
+    margin-top: 0;
+}
+
+.slogan img {
+    width: 100%;
+    padding-top: 20px
+}
+
+#field {
+    background-color: #292929;
+}
+
+.footer2 a {
+    color: white
+}

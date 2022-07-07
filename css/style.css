@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/Font_Roboto_Viet_Hoa_VnUnikey.com_/Roboto-Medium.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/Font_Roboto_Viet_Hoa_VnUnikey.com_/Roboto-Light.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/Font_Roboto_Viet_Hoa_VnUnikey.com_/Roboto-Medium.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: noodle;
+    src: url(../fonts/SVN-BigNoodleTitling.otf)
+}
+
+body {
+    font-family: roboto-light;
+    font-weight: 600;
+    background-color: #292929;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: roboto-bold;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: noodle;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: roboto-medium;
+}
+
+strong {
+    font-family: roboto-medium;
+    color: rgb(199, 255, 199)
+}
+
+main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.intro {
+    background-image: url(../images/banner2.png);
+    border-radius: 5px;
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    padding: 25px;
+    color: white;
+    font-weight: 800;
+}
+
+header p {
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.sanbong p {
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.navbar {
+    background-color: #242323;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    font-family: noodle;
+    font-size: large;
+    justify-content: space-between;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.596);
+}
+
+nav {
+    z-index: 2
+}
+
+nav .submenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    font-size: 1rem;
+    right: 60px;
+    padding-right: 0;
+    background-color: rgb(20, 20, 20);
+    line-height: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.548);
+    transform: translateY(-1em);
+}
+
+.submenu-mobile {
+    display: none;
+}
+
+nav .mainmenu>li:hover .submenu {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+
+.submenu li:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+.submenu a:hover {
+    text-shadow: 0px 0px 2px black;
+}
+
+.logo a:link,
+.logo a:visited,
+.logo a:hover {
+    color: white
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.TabletTitleLink {
+    display: none;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.logo img {
+    width: 10%;
+    padding-left: 2em;
+    margin-right: 20px;
+}
+
+nav {
+    float: right;
+    line-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 2em;
+}
+
+nav li {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+header a:link {
+    color: rgba(255, 255, 255, 0.712);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header a:visited {
+    color: rgba(255, 255, 255, 0.712);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:hover {
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(163, 255, 163);
+    transition: 0.2s;
+}
+
+.sanbong {
+    display: flex;
+    flex-direction: column;
+}
+
+#field i {
+    display: none;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100vw;
+    height: 100%;
+    background-color: #242323;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.596);
+}
+
+.footercontainer {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer1 h2 {
+    font-family: noodle;
+    font-size: 2rem;
+}
+
+.footer1 {
+    align-items: center;
+    text-align: center;
+}
+
+.footer1 img {
+    width: 40px;
+    margin: 1rem
+}
+
+.footer2 a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer2 a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer2 a:hover {
+    text-shadow: 0px 0px 5px rgb(163, 255, 163);
+    transition: 0.2s;
+}
